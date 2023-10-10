@@ -1,0 +1,13 @@
+sno=input("enter sno:")
+name=str(input("enter name:"))
+grp=str(input("enter group:"))
+s1=int(input("enter s1 marks:"))
+s2=int(input("enter s2 marks:"))
+s3=int(input("enter s3 marks:"))
+total=s1+s2+s3
+avge=total/3
+print("sno:",sno)
+print("name:",name)
+print("group:",grp)
+print("total:",total)
+print("avge:",avge)
