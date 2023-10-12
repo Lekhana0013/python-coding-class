@@ -1,0 +1,2 @@
+n=int(input("enter n value:"))
+print("HI") if(n>50) else print("BYE")
