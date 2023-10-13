@@ -1,0 +1,29 @@
+kurta=300
+top=250
+jean=350
+shoe=250
+print("******Welcome To Max Shoppable Mall******")
+cname=input('enter customer name:')
+cpno=input('enter customer ph no:')
+kq=int(input('enter no of kurtas:'))
+tq=int(input('enter no of tops:'))
+jq=int(input('enter no of jeans:'))
+sq=int(input('enter no of shoes:'))
+bill=(kurta*kq)+(top*tq)+(jean*jq)+(shoe*sq)
+if bill>=2500:
+    disc=bill*30/100
+elif bill>=1000:
+    disc=bill*15/100
+elif bill>=750:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*2/100
+total=bill-disc
+gst=bill*12/100
+obill=total+gst
+print("Total bill:",total)
+print('Gst:',gst)
+print('Over all bill:',obill)
+print("******Thank you!!!Visit Again!!!")
