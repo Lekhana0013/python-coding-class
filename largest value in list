@@ -1,0 +1,6 @@
+n=int(input())
+l=[]
+for i in range(n+1):
+    g=int(input())
+    l.append(g)
+print(max(l))
