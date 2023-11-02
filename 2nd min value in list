@@ -1,0 +1,12 @@
+def minlist(l):
+    minn=l[0]
+    for i in l:
+        if i<minn:
+            minn=i
+    return minn
+n=int(input())
+l=list(map(int,input(). split()))
+fminn=minlist(l)
+l.remove(fminn)
+sminn=minlist(l)
+print(sminn)
