@@ -1,0 +1,28 @@
+def mysub():
+    a=int(num1.get())
+    b=int(num2.get())
+    s=a-b
+    res='Result'+str(s)
+    l3.config(text=s)
+     
+from tkinter import *
+substracting=Tk()
+substracting.title("Substracting 2 no's")
+l1=Label(substracting,text="Enter First Number")
+num1=Entry(substracting)
+l2=Label(substracting,text="Enter Second Number")
+num2=Entry(substracting)
+b=Button(substracting,text="Add",command=mysub)
+l3=Label(substracting,text="Result:")
+
+l1.grid(row=0,column=0)
+num1.grid(row=0,column=1)
+
+
+l2.grid(row=1,column=0)
+num2.grid(row=1,column=1)
+
+b.grid(row=2,column=0)
+l3.grid(row=2,column=1)
+
+substracting.mainloop()
