@@ -1,0 +1,74 @@
+def myresult():
+    s1=int(s1marks.get())
+    s2=int(s2marks.get())
+    s3=int(s3marks.get())
+    s4=int(s4marks.get())
+    s5=int(s5marks.get())
+    s6=int(s6marks.get())
+    total=s1+s2+s3+s4+s5+s6
+    cpga=total//6
+    if cpga==10:
+        result='o'
+    elif cpga>=9 and cpga<10:
+        result='A+'
+    elif cpga>=8 and cpga<9:
+        result='A'
+    elif cpga>=7 and cpga<8:
+        result='B'
+    elif cpga>6 and cpga<7:
+        result='C'
+    elif cpga>=5 and cpga<6:
+        result='D'
+    elif cpga>=4 and cpga<5:
+        result='E'
+    else:
+        result='F'
+    s="Total:"+str(total)+" Result:"+result
+    res.config(text=s)
+
+from tkinter import *
+result=Tk()
+result.title("Student Result")
+s1=Label(result,text="Enter sem1 Marks:")
+s1marks=Entry(result)
+s2=Label(result,text="Enter sem2 Marks:")
+s2marks=Entry(result)
+s3=Label(result,text="Enter sem3 Marks:")
+s3marks=Entry(result)
+s4=Label(result,text="Enter sem4 Marks:")
+s4marks=Entry(result)
+s5=Label(result,text="Enter sem5 Marks:")
+s5marks=Entry(result)
+s6=Label(result,text="Enter sem6 Marks:")
+s6marks=Entry(result)
+
+b1=Button(result,text="Submit",command=myresult)
+res=Label(result,text="?")
+s1.grid(row=0,column=0)
+s1marks.grid(row=0,column=1)
+
+s2.grid(row=1,column=0)
+s2marks.grid(row=1,column=1)
+
+s3.grid(row=2,column=0)
+s3marks.grid(row=2,column=1)
+
+s4.grid(row=3,column=0)
+s4marks.grid(row=3,column=1)
+
+s5.grid(row=4,column=0)
+s5marks.grid(row=4,column=1)
+
+s6.grid(row=5,column=0)
+s6marks.grid(row=5,column=1)
+
+b1.grid(row=6,column=0)
+res.grid(row=6,column=1)
+
+result.mainloop()
+
+
+
+
+    
+    
