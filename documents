@@ -1,0 +1,15 @@
+document=input()
+uname,dname=document.split('.')
+if uname.isidentifier():
+    if dname=='jpeg':
+        print('photo document')
+    elif dname=='doc':
+        print('word document')
+    elif dname=='xls':
+        print('Excel document')
+    elif dname=='ppt':
+        print('powerpoint document')
+    else:
+        print('Unknown document')
+else:
+    print('Invalid document')
